@@ -1,21 +1,17 @@
-const Root = () => {
-    return (
-        <>
-            You can edit your package in:
-            <pre>packages\my-first-theme\src\index.js</pre>
-        </>
-    );
-};
 
-export default {
+import Root from "./components"
+
+const myFirstTheme = {
     name: "my-first-theme",
     roots: {
-        theme: Root
+        theme: Root,
     },
     state: {
-        theme: {}
+        theme: {},
     },
     actions: {
-        theme: {}
-    }
-};
+        theme: {},
+    },
+}
+
+export default myFirstTheme
