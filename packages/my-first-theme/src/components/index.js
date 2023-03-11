@@ -30,7 +30,7 @@ const Root = ({ state }) => {
                     <Menu>
                         <Link link="/">Home</Link>
                         <Link link="/page/2">More posts</Link>
-                        <Link link="/about-us">About Us</Link>
+                        <Link link="http://localhost/test.raiatec.com/about-us/">About Me</Link>
                     </Menu>
                 </HeaderContent>
             </Header>
