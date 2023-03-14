@@ -1,8 +1,8 @@
 import React from "react"
-import { connect, styled } from "frontity"
+import {connect, styled} from "frontity"
 import Link from "@frontity/components/link"
 
-const List = ({ state, actions }) => {
+const List = ({state, actions}) => {
     const data = state.source.get(state.router.link)
 
     return (

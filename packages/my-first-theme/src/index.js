@@ -12,7 +12,7 @@ const myFirstTheme = {
     },
     actions: {
         theme: {
-            toggleUrl: ({ state }) => {
+            toggleUrl: ({state}) => {
                 state.theme.isUrlVisible = !state.theme.isUrlVisible
             },
         },

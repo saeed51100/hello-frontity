@@ -1,12 +1,12 @@
 import React from "react";
-import { connect, Global, css, styled } from "frontity";
+import {connect, Global, css, styled} from "frontity";
 import Link from "@frontity/components/link";
 import Switch from "@frontity/components/switch";
 import List from "./list";
 import Post from "./post";
 import Page from "./page";
 
-const Root = ({ state, actions }) => {
+const Root = ({state, actions}) => {
     const data = state.source.get(state.router.link);
 
     return (
@@ -44,9 +44,9 @@ const Root = ({ state, actions }) => {
             </Header>
             <Main>
                 <Switch>
-                    <List when={data.isArchive} />
-                    <Post when={data.isPost} />
-                    <Page when={data.isPage} />
+                    <List when={data.isArchive}/>
+                    <Post when={data.isPost}/>
+                    <Page when={data.isPage}/>
                 </Switch>
             </Main>
         </>
@@ -57,7 +57,7 @@ const Header = styled.header`
   background-color: #e5edee;
   border-width: 0 0 8px 0;
   border-style: solid;
-  border-color: ${ props => props.isPostType ? ( props.isPage ? 'lightsteelblue' : 'lightseagreen' ) : 'maroon'};
+  border-color: ${props => props.isPostType ? (props.isPage ? 'lightsteelblue' : 'lightseagreen') : 'maroon'};
 
   h1 {
     color: #4a4a4a;
